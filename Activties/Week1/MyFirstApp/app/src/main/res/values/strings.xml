@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My FIrst App</string>
+
+    <string name="hello_world">Hello MAD world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
