@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView" />
+
+    <!-- Below is a new string resource called @string/line -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/line"
+        android:id="@+id/textView"
+        android:layout_below="@+id/TextView"
+        android:layout_centerHorizontal="true" />
+
+    <!-- RelativeLayout tells android to display items on the layout in relative position -->
+
+    <!-- android:layout_width and height "match parent" Makes the layout the same width and height
+        as the screen size of the device-->
+
+    <!-- android:padding... Adds padding to the screen margin -->
+
+    <!-- TextView include a TextView GUI componant for displaying text -->
+
+    <!-- TextView android:layout makes the text wrap horizontally and vertically, width and height-->
+
+    <!-- "@string:hello_world" Displays a string resource called hello_world THE STRING IS IN
+        strings.xml IS A REFERENCE TO THE STRING NOT STRING ITSELF -->
+    <!-- @string tells android to look at a string resource file -->
+    <!-- Better than hardcoding because easier to change for foriegn laguages in xml -->
+</RelativeLayout>

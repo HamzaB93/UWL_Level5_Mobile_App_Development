@@ -1,0 +1,13 @@
+<!-- resources element identifies contents as resources -->
+<resources>
+
+    <!-- string element identifies the name/value pairs as strings -->
+    <string name="app_name">My First App</string>
+
+    <!--hello_world is the resource. and the value will be displayed -->
+    <string name="hello_world">Sup Dawg!</string>
+
+    <!-- Added a new resource called line with the value "This is a new string line -->
+    <string name = "line">This is a new string line</string>
+    <string name="action_settings">Settings</string>
+</resources>
