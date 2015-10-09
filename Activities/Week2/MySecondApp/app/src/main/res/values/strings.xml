@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Second App</string>
+
+    <string name="modules">Temp!</string>
+    <string name="action_settings">Settings</string>
+    <string name="find_module">Find Module!</string>
+
+
+    <string-array name="module_types">
+        <item>Computer Science</item>
+        <item>Mobile Computing</item>
+        <item>Creative Computing</item>
+        <item>Accounting and Finance</item>
+    </string-array>
+</resources>
