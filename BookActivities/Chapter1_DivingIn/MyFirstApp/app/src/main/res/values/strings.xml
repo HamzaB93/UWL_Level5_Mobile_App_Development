@@ -9,5 +9,6 @@
 
     <!-- Added a new resource called line with the value "This is a new string line -->
     <string name = "line">This is a new string line</string>
+
     <string name="action_settings">Settings</string>
 </resources>

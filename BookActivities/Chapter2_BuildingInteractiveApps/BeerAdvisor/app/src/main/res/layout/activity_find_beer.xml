@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".FindBeerActivity">
+
+    <!-- Spinner is the android name for a drop down list of values -->
+    <!-- In the spinner entries are the values from the array with reference to the array -->
+    <Spinner
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:entries="@array/beer_colors"/>
+
+    <!-- The Button Element was added when we dragged it in the design view.
+    TextView now has an id-->
+    <Button
+        android:id="@+id/find_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/color"
+        android:layout_below="@+id/color"
+        android:text="@string/find_beer"
+        android:onClick="onClickFindBeer"/>
+        <!-- text here will display the value of the find_beer string resource on the button -->
+        <!-- onClick will allow a method to be called when the button is clickes-->
+
+    <TextView
+        android:id="@+id/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/find_beer"
+        android:layout_below="@+id/find_beer"
+        android:layout_marginTop="18dp"
+        android:text="@string/find_beer" />
+        <!-- text here will display the value of the brands string resource in the TextView -->
+
+</RelativeLayout>
+
+<!-- Relative layout elements relate to the layout as a whole or relative to each other (componants).-->
+<!-- TextView in the XML is reflected in the design editor. -->
+<!-- Button is used to trigger an action -->
+<!-- TextView and Button have things in common because they inherit from Adroid View class!!! -->
+<!-- id gives a component an identifying name. Allows you to control what componant does via
+    activity code -->
+<!-- Android Text tells android what text to display. eg in button the text would be in the button-->
+<!-- android width height specify height and width of componants. wrap means should be big
+    enough for content -->
+
+<!-- FOR THIS ACTIVITY THE XML WAS WRITTEN FROM SCRATCH TO SHOW HOW TO CREATE ELEMENTS AND DESIGN THEM-->

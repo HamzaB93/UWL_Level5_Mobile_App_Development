@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Use this page for string resources and value pairs for localisation-->
+    <string name="app_name">Beer Advisor</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="find_beer">Find Beer!</string>
+    <string name="brands"></string>
+
+    <!-- Adding an array of strings -->
+    <!-- string array name is the name of the array and the values in item make up the array -->
+    <!-- These are entries in the spinner and has a reference to this array -->
+    <string-array name="beer_colors">
+        <item>Light</item>
+        <item>Amber</item>
+        <item>Brown</item>
+        <item>Dark</item>
+    </string-array>
+
+</resources>
