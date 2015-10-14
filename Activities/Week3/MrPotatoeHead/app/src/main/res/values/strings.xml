@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mr Potatoe Head</string>
+    <string name="hello_world">Welcome To The Mr Potatoe Head App</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings for the check boxes -->
+    <string name="checkBoxShoes">Shoes</string>
+    <string name="checkBoxNose">Nose</string>
+    <string name="checkBoxMouth">Mouth</string>
+    <string name="checkBoxGlasses">Glasses</string>
+    <string name="checkBoxEyes">Eyes</string>
+    <string name="checkBoxMustache">Mustache</string>
+    <string name="checkBoxHat">Hat</string>
+    <string name="checkBoxArms">Arms</string>
+    <string name="checkBoxEars">Ears</string>
+    <string name="checkBoxEyebrows">Eyebrows</string>
+</resources>

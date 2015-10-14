@@ -1,0 +1,256 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Potatoe Body - Default visible-->
+    <ImageView
+        android:id="@+id/body"
+        android:src="@drawable/body"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars" />
+
+    <!-- Potatoe shoes - Default invisible -->
+    <ImageView
+        android:id="@+id/shoes"
+        android:src="@drawable/shoes"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Nose - Default invisible  -->
+    <ImageView
+        android:id="@+id/nose"
+        android:src="@drawable/nose"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Mouth - Default invisible -->
+    <ImageView
+        android:id="@+id/mouth"
+        android:src="@drawable/mouth"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Glasses - Default invisible -->
+    <ImageView
+        android:id="@+id/glasses"
+        android:src="@drawable/glasses"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Eyes - Default invisible -->
+    <ImageView
+        android:id="@+id/eyes"
+        android:src="@drawable/eyes"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Mustache - Default invisible -->
+    <ImageView
+        android:id="@+id/mustache"
+        android:src="@drawable/mustache"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Hat - Default invisible -->
+    <ImageView
+        android:id="@+id/hat"
+        android:src="@drawable/hat"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Arms - Default invisible -->
+    <ImageView
+        android:id="@+id/arms"
+        android:src="@drawable/arms"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Ears - Default invisible -->
+    <ImageView
+        android:id="@+id/ears"
+        android:src="@drawable/ears"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!-- Potatoe Eyebrows - Default invisible -->
+    <ImageView
+        android:id="@+id/eyebrows"
+        android:src="@drawable/eyebrows"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/checkBoxEars"
+        android:layout_alignEnd="@+id/checkBoxEars"
+        android:visibility="invisible"/>
+
+    <!--CheckBox for Shoes -->
+    <CheckBox
+        android:id="@+id/checkBoxShoes"
+        android:text="@string/checkBoxShoes"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:onClick="onClickPotatoe"/>
+
+    <!-- CheckBox for Nose -->
+    <CheckBox
+        android:id="@+id/checkBoxNose"
+        android:text="@string/checkBoxNose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxShoes"
+        android:layout_alignLeft="@+id/checkBoxShoes"
+        android:layout_alignStart="@+id/checkBoxShoes"
+        android:onClick="onClickPotatoe" />
+
+    <!-- CheckBox for Mouth - Default invisible -->
+    <CheckBox
+        android:id="@+id/checkBoxMouth"
+        android:text="@string/checkBoxMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxNose"
+        android:layout_alignLeft="@+id/checkBoxNose"
+        android:layout_alignStart="@+id/checkBoxNose"
+        android:onClick="onClickPotatoe" />
+
+    <!-- CheckBox for Glasses - Default invisible -->
+    <CheckBox
+        android:id="@+id/checkBoxGlasses"
+        android:text="@string/checkBoxGlasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxMouth"
+        android:layout_alignLeft="@+id/checkBoxShoes"
+        android:layout_alignStart="@+id/checkBoxShoes"
+        android:onClick="onClickPotatoe"/>
+
+    <!-- CheckBox for Eyes - Default invisible -->
+    <CheckBox
+        android:id="@+id/checkBoxEyes"
+        android:text="@string/checkBoxEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxGlasses"
+        android:layout_alignLeft="@+id/checkBoxGlasses"
+        android:layout_alignStart="@+id/checkBoxGlasses"
+        android:onClick="onClickPotatoe" />
+
+    <!-- CheckBox for Mustache -->
+    <CheckBox
+        android:id="@+id/checkBoxMustache"
+        android:text="@string/checkBoxMustache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxShoes"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:checked="false"
+        android:onClick="onClickPotatoe" />
+
+    <!--CheckBox for Hat -->
+    <CheckBox
+        android:id="@+id/checkBoxHat"
+        android:text="@string/checkBoxHat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxMustache"
+        android:layout_alignLeft="@+id/checkBoxMustache"
+        android:layout_alignStart="@+id/checkBoxMustache"
+        android:onClick="onClickPotatoe" />
+
+    <!-- CheckBox for Arms -->
+    <CheckBox
+        android:id="@+id/checkBoxArms"
+        android:text="@string/checkBoxArms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBoxMouth"
+        android:layout_alignLeft="@+id/checkBoxHat"
+        android:layout_alignStart="@+id/checkBoxHat"
+        android:onClick="onClickPotatoe" />
+
+    <!-- CheckBox for Ears -->
+    <CheckBox
+        android:id="@+id/checkBoxEars"
+        android:text="@string/checkBoxEars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBoxGlasses"
+        android:layout_alignLeft="@+id/checkBoxArms"
+        android:layout_alignStart="@+id/checkBoxArms"
+        android:onClick="onClickPotatoe" />
+
+    <!-- CheckBox for Eyebrows -->
+    <CheckBox
+        android:id="@+id/checkBoxEyebrows"
+        android:text="@string/checkBoxEyebrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxEars"
+        android:layout_alignRight="@+id/checkBoxMustache"
+        android:layout_alignEnd="@+id/checkBoxMustache"
+        android:onClick="onClickPotatoe" />
+
+</RelativeLayout>
