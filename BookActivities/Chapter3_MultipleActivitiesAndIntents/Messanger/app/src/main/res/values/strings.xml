@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Messanger</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- String for the button -->
+    <string name="send">Send Message</string>
+    <string name="title_activity_receive_message">ReceiveMessageActivity</string>
+
+    <!-- The string from the receive message xml-->
+    <string name="hello_world"></string>
+</resources>
