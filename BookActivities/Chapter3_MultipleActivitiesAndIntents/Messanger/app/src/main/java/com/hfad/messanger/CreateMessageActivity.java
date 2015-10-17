@@ -37,17 +37,27 @@ public class CreateMessageActivity extends Activity {
         // Adding extra to the intent which is the text messageView > messageText
         intent.putExtra(Intent.EXTRA_TEXT, messageText);
 
+        // Getting the chooser string element
+        String chooserTitle = getString(R.string.chooser);
+
+        // This will display the chooser title >> Send message...
+        // This will also be what the users chosen app
+        Intent chosenIntent = Intent.createChooser(intent, chooserTitle);
+
         // Android checks to see if the intent is okay
-        // Start activity
-        startActivity(intent);
+        // Start activity the user chose
+        startActivity(chosenIntent);
     }
 }
 // HOW THIS PART WORKS
 /* The user click the button which triggers onSendMessage method,
     an intent is created with the action to send plain text.
-    Androis sees the intent can only be passed to activities that can handle ACTION_SEND
-    ANdroid will check all the apps that can handle this intent
+    Android sees the intent can only be passed to activities that can handle ACTION_SEND
+    Android will check all the apps that can handle this intent
     If none are found an exception is thrown, if one app can it will use that, if many can
-    android will give you a choser. Asks the user which they want to use, The message is then sent
-    to that app
+    android will give you a choser.
+    The choser now has a title. The choser will now always ask what app they would like.
+    Asks the user which they want to use, The message is then sent
+    to that app. This user interaction sends a EXLICIT intent. Android sends this intent to the app
+    the user chose and the activity starts.
 */

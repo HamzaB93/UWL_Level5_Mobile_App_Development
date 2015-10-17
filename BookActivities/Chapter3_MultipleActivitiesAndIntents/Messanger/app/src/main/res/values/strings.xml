@@ -8,4 +8,8 @@
 
     <!-- The string from the receive message xml-->
     <string name="hello_world"></string>
+
+
+    <!-- This will be the string that can be seen in the choser -->
+    <string name="chooser">Send message...</string>
 </resources>
