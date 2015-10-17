@@ -28,22 +28,26 @@ public class CreateMessageActivity extends Activity {
         // Converting the text from the messageView to text byt getting the text the converting to string
         String messageText = messageView.getText().toString();
 
-        // Creating the intent to send to the ReceiveMessageActivity class
-        Intent intent = new Intent(this, ReceiveMessageActivity.class);
+        // Creating the intent to send! This is implicit so any app that can use this can do it
+        Intent intent = new Intent(Intent.ACTION_SEND);
 
-        // Putting extra infromation in the intent to send to android
-        // Adding text to the intent and naming it message
-        // As this is extra information, receiveMessage activity needs to retrieve this info
-        intent.putExtra(ReceiveMessageActivity.EXTRA_MESSAGE, messageText);
+        // The type will be of plain text
+        intent.setType("text/plain");
+
+        // Adding extra to the intent which is the text messageView > messageText
+        intent.putExtra(Intent.EXTRA_TEXT, messageText);
 
         // Android checks to see if the intent is okay
-        // Start activity ReceiveMessageActivity
+        // Start activity
         startActivity(intent);
     }
 }
 // HOW THIS PART WORKS
 /* The user click the button which triggers onSendMessage method,
-    an intent is created to start the ReceiveMessage activity,An exra part is given to the intent
-    Android checks if the intent is okay then starts ReceiveMessage
-    The message is then displayed on the next screen straight away because it is in the onCreate method.
- */
+    an intent is created with the action to send plain text.
+    Androis sees the intent can only be passed to activities that can handle ACTION_SEND
+    ANdroid will check all the apps that can handle this intent
+    If none are found an exception is thrown, if one app can it will use that, if many can
+    android will give you a choser. Asks the user which they want to use, The message is then sent
+    to that app
+*/
