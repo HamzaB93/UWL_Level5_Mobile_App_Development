@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyFourthApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- String for the text view-->
+    <string name="time_text">TIME</string>
+
+    <!-- String for the buttons -->
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="reset">RESET</string>
+</resources>
