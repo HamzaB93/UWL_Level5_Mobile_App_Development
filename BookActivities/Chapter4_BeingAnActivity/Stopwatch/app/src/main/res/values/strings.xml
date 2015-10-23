@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Stopwatch</string>
+
+    <string name="hello_world"></string>
+    <string name="action_settings">Settings</string>
+
+    <!-- String for text view -->
+    <string name="time">TIMER</string>
+
+    <!-- String for the start button -->
+    <string name="start">Start</string>
+
+    <!-- String for the stop button -->
+    <string name="stop">Stop</string>
+
+    <!-- String for the reset button -->
+    <string name="reset">Reset</string>
+</resources>
