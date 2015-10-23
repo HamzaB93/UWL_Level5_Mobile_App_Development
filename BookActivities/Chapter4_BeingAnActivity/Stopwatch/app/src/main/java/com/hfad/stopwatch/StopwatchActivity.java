@@ -16,13 +16,24 @@ public class StopwatchActivity extends Activity {
     private int seconds = 0;
     private boolean running;
 
+    // Called immediately when app is launched
+    // Needs to be overrided because android wont know what layout to use
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stopwatch);
 
+        // If the Bundle object has not been created from scratch / has been used before
+        if(savedInstanceState != null)
+        {
+            // Retreive the values of the seconds and running variables from he Bundle
+            seconds = savedInstanceState.getInt("seconds");
+            running = savedInstanceState.getBoolean("running");
+        }
+
         // We want runTimer to start running immediately
         // Starting when the activity is created
+        // running is no value until the user presses button, so the time will not increment
         runTimer();
     }
 
@@ -92,6 +103,19 @@ public class StopwatchActivity extends Activity {
 
     }
 
+    // This will occur before onDestroy
+    // Has a parameter of type Bundle called savedInstanceState
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState)
+    {
+        //object.thetype(name / value)
+        // Save the value of the seconds
+        savedInstanceState.putInt("seconds", seconds);
+        // save the value of the running
+        savedInstanceState.putBoolean("running", running);
+        // Put them in the bundle
+    }
+
 }
 
 // Handler allows you to schedule code, In this case, schedule to run the stop watch app every second
@@ -103,3 +127,16 @@ public class StopwatchActivity extends Activity {
 
 // postDelayed() is code you want to run in the future, takes 2 parameters, Runnable and long
 // run() cotains code we want to run, long specifies milliseconds to delay code by.
+
+// onCreate runs immediatly after the app is launched
+// Where inititalisation code should go
+
+// Activity runs when its visibl in the foreground and user can interact wth it
+
+// onDestroy gets called shortly before the app is detroyed, can happen if the configuration of the
+// hardware has been changed
+// Used for final free up of space
+
+// When screen is rotated, before onDestroy is called, onSavedInstanceState is called and saved the values
+// to a bundle, onDestroy is called then onCreate is called again.
+// variables are then set to how they were before the activity was destroyed
