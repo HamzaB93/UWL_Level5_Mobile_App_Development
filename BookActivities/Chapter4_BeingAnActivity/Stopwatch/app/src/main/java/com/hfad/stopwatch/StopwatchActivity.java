@@ -16,6 +16,10 @@ public class StopwatchActivity extends Activity {
     private int seconds = 0;
     private boolean running;
 
+    // Record if watch was running before onStop so we know to set it to running again
+    // when it become visible
+    private boolean wasRunning;
+
     // Called immediately when app is launched
     // Needs to be overrided because android wont know what layout to use
     @Override
@@ -29,6 +33,9 @@ public class StopwatchActivity extends Activity {
             // Retreive the values of the seconds and running variables from he Bundle
             seconds = savedInstanceState.getInt("seconds");
             running = savedInstanceState.getBoolean("running");
+
+            // Restore the state it has before onStop occured
+            wasRunning = savedInstanceState.getBoolean("wasRunning");
         }
 
         // We want runTimer to start running immediately
@@ -113,7 +120,38 @@ public class StopwatchActivity extends Activity {
         savedInstanceState.putInt("seconds", seconds);
         // save the value of the running
         savedInstanceState.putBoolean("running", running);
+
+        savedInstanceState.putBoolean("wasRunning", wasRunning);
+
         // Put them in the bundle
+    }
+
+    // onStop will be called when the activity is not visible to the user
+    // The stop watch will stop
+    // Overriding android lifecycle methods
+    @Override
+    protected void onStop()
+    {
+        // Need to make sure the app gets to do all the activities from the superclass lifecycle
+        super.onStop();
+
+        // Record whether stopwatch was running when the onstop method was called
+        wasRunning = running;
+
+        // Need to ensure the stopwatch stops
+        running = false;
+    }
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+
+        // If the watch was running, set it to running again
+        if (wasRunning)
+        {
+            running = true;
+        }
     }
 
 }
@@ -140,3 +178,12 @@ public class StopwatchActivity extends Activity {
 // When screen is rotated, before onDestroy is called, onSavedInstanceState is called and saved the values
 // to a bundle, onDestroy is called then onCreate is called again.
 // variables are then set to how they were before the activity was destroyed
+
+// onStart, onStop, onRestart are inherited from Activity class
+
+// onStart is called when the activity is made visible to the user
+
+// onStop gets called when your activity has stopped being visible to the user or because its being destroyed
+//  if its being destroyed, onSavedInstanceState gets called before onStop
+
+// onRestart gets called after your actiity has been made invisible, before its made visible again
