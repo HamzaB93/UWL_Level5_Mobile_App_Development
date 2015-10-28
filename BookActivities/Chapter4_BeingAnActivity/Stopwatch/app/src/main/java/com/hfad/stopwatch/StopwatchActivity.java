@@ -130,10 +130,10 @@ public class StopwatchActivity extends Activity {
     // The stop watch will stop
     // Overriding android lifecycle methods
     @Override
-    protected void onStop()
+    protected void onPause()
     {
         // Need to make sure the app gets to do all the activities from the superclass lifecycle
-        super.onStop();
+        super.onPause();
 
         // Record whether stopwatch was running when the onstop method was called
         wasRunning = running;
@@ -143,9 +143,9 @@ public class StopwatchActivity extends Activity {
     }
 
     @Override
-    protected void onStart()
+    protected void onResume()
     {
-        super.onStart();
+        super.onResume();
 
         // If the watch was running, set it to running again
         if (wasRunning)
@@ -153,6 +153,8 @@ public class StopwatchActivity extends Activity {
             running = true;
         }
     }
+    /// NOTE onStop and onStart replaced by onPause and onResume respectively
+    // These are called when the focuse has turned to another activity and comes back to the wathc
 
 }
 
@@ -187,3 +189,6 @@ public class StopwatchActivity extends Activity {
 //  if its being destroyed, onSavedInstanceState gets called before onStop
 
 // onRestart gets called after your actiity has been made invisible, before its made visible again
+
+// onPause gets called when the activity is visible but another activity has focus
+// onResume gets called immediately before your activity is about to stare interacting with the user

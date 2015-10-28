@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RelativeLayoutApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- String for the first button -->
+    <string name="button">Click Me</string>
+
+    <!-- For the relative buttons -->
+    <string name="click_me">CLICK ME</string>
+    <string name="new_button_text">BELOW</string>
+
+
+</resources>
