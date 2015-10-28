@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Linear Layout App</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Edit texts -->
+    <string name="to">To</string>
+    <string name="message">Message</string>
+    <!-- For Button -->
+    <string name="send">Send</string>
+</resources>

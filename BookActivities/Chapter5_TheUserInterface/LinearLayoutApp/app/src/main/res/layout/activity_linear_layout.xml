@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LinearLayout">
+
+    <EditText
+        android:text="@string/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Now takes up any extra space available -->
+    <!-- Takes space from views that dont need the extra -->
+    <!-- Height will be determined by the layout -->
+    <EditText
+        android:text="@string/message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"/>
+
+    <Button
+        android:text="@string/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+
+</LinearLayout>
+
+<!-- Define linear layout like this : <LinearLayout> </LinearLayout> -->
+<!-- android:layout_width and height are mandatory -->
+<!-- Use android:orientation to say if you want vertical or horizontal -->
+
+<!-- Add views in the order you want them in -->
+<!-- Only need id when you want to use a view in the activity code, because this layout figures out
+    where each view should be positioned based on the order they appear in th xml. They dont need
+    to refer to each other for position-->
+<!-- Can specify the width -->
+<!-- android:layout_width="wrap_content" means you want view wide enough for its content to fit inside it -->
+<!-- android:layout_widt="match_parent" means you want view to wde as the parent layout -->
+
+<!-- Normally views take up as much space as they need, but stretch them using weight -->
+<!-- When giving weight, layout ensures that each view has enough space for its content, buttons has room
+    for text etc. Once done, layout takes extra space and divides it proportionally between views
+    with weight of 1 or greater-->
+
+<!-- Can use gravity to specify how you want to position the contents of the view inside the view -->
+<!-- use android:layout_gravity to move a views if there is available space -->
