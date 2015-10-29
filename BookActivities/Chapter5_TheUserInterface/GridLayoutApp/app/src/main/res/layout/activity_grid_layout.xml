@@ -1,0 +1,69 @@
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:columnCount="2"
+    tools:context=".GridLayout">
+
+    <!-- First row / row 0-->
+    <!-- Put the TextView in the first row and column-->
+    <TextView
+        android:text="@string/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"/>
+
+    <!-- EditText in the first row and second column-->
+    <EditText
+        android:hint="@string/to_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <!-- Second row/ row 1 -->
+    <!-- EditText starts in the second row and first column but spans 2 colums -->
+    <EditText
+        android:hint="@string/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:gravity="top"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"/>
+
+    <!-- Third row/ row 2 -->
+    <Button
+        android:text="@string/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnSpan="2"/>
+
+</GridLayout>
+
+<!-- Grid layout splits screen into grid of rows and columns -->
+<!-- Define grid layout by <GridLayout> -->
+<!-- android:columnCount for how many colums you want, same for rowCount
+    Can let android figure this out with the amount of views you have -->
+<!-- No need to give id for the views unless you need them in the activity code -->
+<!-- By default, this layout positions views in the order they are in, in the xml -->
+<!-- Removing a view can drastically change the layout -->
+<!-- You can still use layout_gravity -->
+
+<!-- Use android:layout_row and column to say whichrow and column you want each view to
+    appear in, Starts with 0 -->
+
+<!-- androidLlayout_gravity="fill" will fill all avialble space -->
+
+<!-- Views are all subclasses of android.view.View

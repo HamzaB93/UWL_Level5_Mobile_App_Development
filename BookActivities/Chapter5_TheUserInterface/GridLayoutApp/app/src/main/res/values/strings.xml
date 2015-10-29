@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Grid Layout App</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TextView text -->
+    <string name="to">To</string>
+
+    <!-- EditText field next to the TextView -->
+    <string name="to_hint">Enter email address</string>
+
+    <!-- For message edit text view -->
+    <string name="message">Message</string>
+
+    <!-- FOr button -->
+    <string name="send">Send</string>
+
+    <!-- Chooser title -->
+</resources>
