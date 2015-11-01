@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Starbuzz</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Top Level Activity -->
+    <!-- Description for the starbuzz logo in TopLevelActivity-->
+    <string name="starbuzz_logo">Starbuzz logo</string>
+    <!-- Array of strings that will be used in the list view in TopLevelActivity -->
+    <string-array name="options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
+    <string name="title_activity_drink_category">DrinkCategoryActivity</string>
+
+
+    <!-- Drink Activity strings -->
+    <string name="title_activity_drink">DrinkActivity</string>
+</resources>

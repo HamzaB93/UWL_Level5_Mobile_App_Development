@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hfad.starbuzz.DrinkActivity">
+
+    <!-- Photo of the drink -->
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="190dp"
+        android:layout_height="190dp" />
+
+    <!-- Name of the drink -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Description of the drink -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

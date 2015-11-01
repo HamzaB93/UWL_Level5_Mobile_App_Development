@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TopLevelActivity">
+
+    <!-- Adding the starbuzz logo -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/starbuzz_logo"
+        android:contentDescription="@string/starbuzz_logo"/>
+
+    <!-- Defining a list view with entries from a string array which will populate the view-->
+    <ListView
+        android:id="@+id/list_options"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/options"/>
+
+
+</LinearLayout>
+
+<!-- When using Image view, use contentDescription to add a description of the image,
+    helps with accessability -->
+<!-- ListView gives a list of data that can be used for navigation. -->

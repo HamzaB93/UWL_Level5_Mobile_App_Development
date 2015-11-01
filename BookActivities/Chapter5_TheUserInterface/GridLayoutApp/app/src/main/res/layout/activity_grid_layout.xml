@@ -21,6 +21,7 @@
 
     <!-- EditText in the first row and second column-->
     <EditText
+        android:id="@+id/to_hint"
         android:hint="@string/to_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +32,7 @@
     <!-- Second row/ row 1 -->
     <!-- EditText starts in the second row and first column but spans 2 colums -->
     <EditText
+        android:id="@+id/message_to"
         android:hint="@string/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,13 +44,15 @@
 
     <!-- Third row/ row 2 -->
     <Button
+        android:id="@+id/send_button"
         android:text="@string/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="2"
         android:layout_column="0"
         android:layout_gravity="center_horizontal"
-        android:layout_columnSpan="2"/>
+        android:layout_columnSpan="2"
+        android:onClick="onClickSend"/>
 
 </GridLayout>
 
@@ -66,4 +70,4 @@
 
 <!-- androidLlayout_gravity="fill" will fill all avialble space -->
 
-<!-- Views are all subclasses of android.view.View
+<!-- Views are all subclasses of android.view.View -->
