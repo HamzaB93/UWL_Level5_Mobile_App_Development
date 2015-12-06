@@ -1,0 +1,42 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_create_order"
+        android:title="@string/action_create_order"
+        android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+        android:actionProviderClass="android.widget.ShareActionProvider" />
+
+    <!-- Settings icon -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
+
+
+<!-- Each item element has an:
+    id = gives item unique id
+    icon = The items icon, drawable or mipmap
+    title = items text, may not get displayted
+    orderInCategory = int value to help android to decide the order in which items should be placed-->
+
+<!-- item can have app:showAsAction:
+    "ifRoom" if there is room for it
+    "withText" show the item with its text
+    "never" never in the main action bar but in the overflow area
+    "always" always place it in the menu. could cause overlapping
+    app prefix because v7 doesnt include it, must have the schema address on the first line-->

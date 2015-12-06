@@ -1,0 +1,14 @@
+<resources>
+    <!-- Base application theme. -->
+    <style
+        name="AppTheme"
+        parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+            <!--<item name="android:background">#FF0000</item> -->
+    </style>
+
+</resources>
+
+<!-- Each style must have a name defined with name attribute. Must have a name so the
+    manifest can refer to it -->
+<!-- parent attribute identifies where the style should inherit its properties from -->

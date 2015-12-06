@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.content.Intent;
 import android.view.View;
 
-// Implments the listener defined in the WorkoutListFragment
+// Implements the listener defined in the WorkoutListFragment
 public class MainActivity extends Activity implements WorkoutListFragment.WorkoutListListener {
 
     @Override
