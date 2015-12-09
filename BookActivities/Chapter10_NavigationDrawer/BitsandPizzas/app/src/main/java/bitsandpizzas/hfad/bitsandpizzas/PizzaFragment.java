@@ -2,6 +2,7 @@ package bitsandpizzas.hfad.bitsandpizzas;
 
 import android.app.Activity;
 import android.app.ListFragment;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 // List fragment with no XML, because list fragments have their own layout
@@ -25,5 +27,13 @@ public class PizzaFragment extends ListFragment {
                 getResources().getStringArray(R.array.pizzas));
         setListAdapter(adapter);
         return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    @Override
+    public void onListItemClick(ListView listView, View view, int position, long id)
+    {
+        Intent intent = new Intent(getActivity(), PizzaDetailActivity.class);
+        intent.putExtra(PizzaDetailActivity.EXTRA_PIZZANO, (int) id);
+        startActivity(intent);
     }
 }

@@ -37,5 +37,8 @@
         <item>Pasta</item>
         <item>Stores</item>
     </string-array>
+
+
+    <string name="title_activity_pizza_detail">Pizza</string>
     
 </resources>

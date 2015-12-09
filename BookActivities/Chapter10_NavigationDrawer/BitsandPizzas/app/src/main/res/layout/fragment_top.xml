@@ -6,7 +6,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text="@string/title_top"
+        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

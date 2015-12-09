@@ -92,6 +92,7 @@ public class MainActivity extends Activity {
         // Set the transition to the new fragment
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
 
+        ft.addToBackStack(null);
         // Commit to the transaction
         ft.commit();
 

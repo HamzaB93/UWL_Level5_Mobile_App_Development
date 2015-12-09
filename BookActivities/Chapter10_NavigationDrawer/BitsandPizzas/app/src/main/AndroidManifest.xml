@@ -20,6 +20,11 @@
             android:name=".OrderActivity"
             android:label="@string/title_activity_order" >
         </activity>
+        <activity
+            android:name=".PizzaDetailActivity"
+            android:label="@string/title_activity_pizza_detail"
+            android:theme="@style/Base.Theme.AppCompat.Light">
+        </activity>
     </application>
 
 </manifest><!--

@@ -1,6 +1,7 @@
 package bitsandpizzas.hfad.bitsandpizzas;
 
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -17,4 +18,5 @@ public class TopFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_top, container, false);
     }
+
 }
