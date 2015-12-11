@@ -9,7 +9,7 @@ public class Combo
     String name;
     int imageResourceId;
     String vTrigger;
-    String special;
+    String specials;
     String criticalArt;
 
     // Array that contains the Combo objects referenced as combos
@@ -39,14 +39,14 @@ public class Combo
                             "Bull Head: Bk, Dwn, Fwd + Punch\nBull Horn: Hold Punch and release\nHanging Chain: Dwn, Fwd + Kick\nKilling Head: Fwd, Dwn, Bk" +
                                     " + Punch (Close to opponent)\nBull Revenger: Fwd, Dwn, Bk + Kick", "Cross Stinger Assault: Dwn, Fwd, Dwn, Fwd + Punch")
             };
-    
+
     // Contructor for Combo objects
     public Combo(String name, int imageResourceId, String vTrigger, String special, String criticalArt)
     {
         this.name = name;
         this.imageResourceId = imageResourceId;
         this.vTrigger = vTrigger;
-        this.special = special;
+        this.specials = special;
         this.criticalArt = criticalArt;
     }
 
@@ -63,9 +63,9 @@ public class Combo
     {
         return vTrigger;
     }
-    public String getSpecial()
+    public String getSpecials()
     {
-        return special;
+        return specials;
     }
     public String getCriticalArt()
     {

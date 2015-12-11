@@ -20,6 +20,10 @@
             android:name=".ComboCategoryActivity"
             android:label="@string/title_activity_combo_category" >
         </activity>
+        <activity
+            android:name=".ComboDetailActivity"
+            android:label="@string/title_activity_combo_detail" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,10 +1,12 @@
 package hamza.assignment.sfvfightguide;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -32,5 +34,17 @@ public class ComboCategoryActivity extends ListActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_combo_category, menu);
         return true;
+    }
+
+    // Setting up an onclick method for when an item is clicked from the list
+    public void onListItemClick(ListView listView, View itemView, int position, long id)
+    {
+        // Creating an intent to start the ComboDetailActivity
+        Intent intent = new Intent(ComboCategoryActivity.this, ComboDetailActivity.class);
+
+        // Adding extra to the intent. This will be an integer that will reference the index of
+        // the array
+        intent.putExtra(ComboDetailActivity.EXTRA_COMBON, (int) id);
+        startActivity(intent);
     }
 }

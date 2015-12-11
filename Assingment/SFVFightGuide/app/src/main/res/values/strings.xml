@@ -13,6 +13,12 @@
 
     <!-- ComboCategoryActivity title -->
     <string name="title_activity_combo_category">Characters</string>
+    <string name="title_activity_combo_detail">Combos</string>
 
+    <!-- ComboDetailAcitivty strings -->
+    <!-- Labels -->
+    <string name="vTrigger_label">V Trigger</string>
+    <string name="specials_label">Specials</string>
+    <string name="criticalArt_label">Critical Art</string>
     
 </resources>
