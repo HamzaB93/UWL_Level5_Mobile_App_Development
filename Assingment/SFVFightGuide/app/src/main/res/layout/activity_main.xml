@@ -6,28 +6,40 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- Introduction -->
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/intro"
         android:text="@string/intro_string"
         android:textSize="10pt"
-        android:textColor="black"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="43dp"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/strategies_button"
         android:layout_alignEnd="@+id/matchup_button" />
 
+    <!-- Combo button and label -->
     <ImageView
         android:id="@+id/combo_button"
         android:src="@drawable/combo_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
         android:onClick="onClickCombo"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/intro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/combo_button_label"
+        android:text="@string/combo_button_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/combo_button"
         android:layout_centerHorizontal="true" />
 
+    <!-- Strategies button and label -->
     <ImageView
         android:id="@+id/strategies_button"
         android:src="@drawable/strategies_button"
@@ -37,6 +49,17 @@
         android:layout_below="@+id/combo_button"
         android:layout_toStartOf="@+id/combo_button" />
 
+    <TextView
+        android:id="@+id/strategies_button_label"
+        android:text="@string/strategies_button_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/strategies_button"
+        android:layout_alignStart="@+id/strategies_button"
+        android:paddingLeft="15dp"/>
+
+    <!-- Match-up button and label -->
     <ImageView
         android:id="@+id/matchup_button"
         android:src="@drawable/matchup_button"
@@ -44,6 +67,16 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/strategies_button"
         android:layout_toEndOf="@+id/combo_button" />
+
+    <TextView
+        android:id="@+id/matchup_button_label"
+        android:text="@string/matchups_button_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matchup_button"
+        android:layout_alignEnd="@+id/matchup_button"
+        android:paddingRight="15dp"/>
 
 
 </RelativeLayout>
