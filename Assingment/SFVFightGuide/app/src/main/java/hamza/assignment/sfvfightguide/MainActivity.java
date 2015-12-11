@@ -23,4 +23,14 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
+    // Making the combo image respond to click with an intent
+    public void onClickCombo(View view)
+    {
+        // The intent starts from the MainActivity, and gets sent to the ComboCategoryActivity
+        Intent intent = new Intent(MainActivity.this, ComboCategoryActivity.class);
+
+        // Start the intent
+        startActivity(intent);
+    }
 }

@@ -10,5 +10,9 @@
     <string name="combo_button_label">Combos</string>
     <string name="strategies_button_label">Strategies</string>
     <string name="matchups_button_label">Match-ups</string>
+
+    <!-- ComboCategoryActivity title -->
+    <string name="title_activity_combo_category">Characters</string>
+
     
 </resources>
