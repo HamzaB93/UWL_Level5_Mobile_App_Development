@@ -23,10 +23,4 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
-    public void onClickCombo (View view)
-    {
-        Intent intent = new Intent(MainActivity.this, Test.class);
-        startActivity(intent);
-    }
 }
