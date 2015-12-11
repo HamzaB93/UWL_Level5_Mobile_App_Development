@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <!-- Introduction -->
@@ -11,7 +10,6 @@
         android:id="@+id/intro"
         android:text="@string/intro_string"
         android:textSize="10pt"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="43dp"
@@ -25,10 +23,10 @@
         android:src="@drawable/combo_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClickCombo"
         android:layout_below="@+id/intro"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:onClick="onClickCombo"/>
 
     <TextView
         android:id="@+id/combo_button_label"
@@ -77,6 +75,15 @@
         android:layout_below="@+id/matchup_button"
         android:layout_alignEnd="@+id/matchup_button"
         android:paddingRight="15dp"/>
+
+    <ImageView
+        android:src="@drawable/ryu"
+        android:ima
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/strategies_button_label"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

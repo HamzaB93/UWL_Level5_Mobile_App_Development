@@ -2,11 +2,13 @@
     <string name="app_name">SFV Fight Guide</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Main Activity Strings -->
+    <!-- Introduction string -->
     <string name="intro_string">Welcome to SFV Fight Guide. This is a basic guide
                                 to get you ready for Street Fighter V!</string>
-
     <!-- Button label strings -->
     <string name="combo_button_label">Combos</string>
     <string name="strategies_button_label">Strategies</string>
     <string name="matchups_button_label">Match-ups</string>
+    
 </resources>
