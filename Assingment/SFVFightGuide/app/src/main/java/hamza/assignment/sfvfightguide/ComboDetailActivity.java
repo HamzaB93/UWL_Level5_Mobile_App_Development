@@ -42,7 +42,7 @@ public class ComboDetailActivity extends Activity {
 
         // Populate the criticalArt TextView
         TextView criticalArt = (TextView) findViewById(R.id.criticalArt);
-        criticalArt.setText(combo.getSpecials());
+        criticalArt.setText(combo.getCriticalArt());
     }
 
     @Override
