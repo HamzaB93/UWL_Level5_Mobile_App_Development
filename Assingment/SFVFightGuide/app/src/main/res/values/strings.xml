@@ -24,5 +24,10 @@
     <!-- StrategiesCategoryActivity title -->
     <string name="title_activity_strategies_category">Strategies</string>
 
+    <!-- StrategiesDetailActivity title -->
+    <string name="title_activity_strategies_detail">Strategy</string>
+
+
+
     
 </resources>

@@ -28,6 +28,10 @@
             android:name=".StrategiesCategoryActivity"
             android:label="@string/title_activity_strategies_category" >
         </activity>
+        <activity
+            android:name=".StrategiesDetailActivity"
+            android:label="@string/title_activity_strategies_detail" >
+        </activity>
     </application>
 
 </manifest>
