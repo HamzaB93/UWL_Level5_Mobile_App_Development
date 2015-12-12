@@ -24,6 +24,10 @@
             android:name=".ComboDetailActivity"
             android:label="@string/title_activity_combo_detail" >
         </activity>
+        <activity
+            android:name=".StrategiesCategoryActivity"
+            android:label="@string/title_activity_strategies_category" >
+        </activity>
     </application>
 
 </manifest>

@@ -33,4 +33,14 @@ public class MainActivity extends Activity {
         // Start the intent
         startActivity(intent);
     }
+
+    // Making the strategies image repsond to clicks
+    public void onClickStrategies(View view)
+    {
+        // Intent from the MainActivity to the StrategiesCategoryAcitivty
+        Intent intent = new Intent(MainActivity.this, StrategiesCategoryActivity.class);
+
+        // Start the intent
+        startActivity(intent);
+    }
 }

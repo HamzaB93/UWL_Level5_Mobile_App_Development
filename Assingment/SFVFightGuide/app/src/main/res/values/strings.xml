@@ -20,5 +20,9 @@
     <string name="vTrigger_label">V Trigger</string>
     <string name="specials_label">Specials</string>
     <string name="criticalArt_label">Critical Art</string>
+
+    <!-- StrategiesCategoryActivity title -->
+    <string name="title_activity_strategies_category">Strategies</string>
+
     
 </resources>
