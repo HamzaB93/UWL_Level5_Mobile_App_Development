@@ -1,82 +1,88 @@
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <!-- Introduction -->
-    <TextView
-        android:id="@+id/intro"
-        android:text="@string/intro_string"
-        android:textSize="10pt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/strategies_button"
-        android:layout_alignEnd="@+id/characterStrat_button_label" />
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <!-- Combo button and label -->
-    <ImageView
-        android:id="@+id/combo_button"
-        android:src="@drawable/combo_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/intro"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:onClick="onClickCombo"/>
+        <!-- Introduction -->
+        <TextView
+            android:id="@+id/intro"
+            android:text="@string/intro_string"
+            android:textSize="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/strategies_button"
+            android:layout_alignEnd="@+id/characterStrat_button_label" />
 
-    <TextView
-        android:id="@+id/combo_button_label"
-        android:text="@string/combo_button_label"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/combo_button"
-        android:layout_centerHorizontal="true" />
+        <!-- Combo button and label -->
+        <ImageView
+            android:id="@+id/combo_button"
+            android:src="@drawable/combo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:onClick="onClickCombo"/>
 
-    <!-- Strategies button and label -->
-    <ImageView
-        android:id="@+id/strategies_button"
-        android:src="@drawable/strategies_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/combo_button"
-        android:layout_toStartOf="@+id/combo_button"
-        android:onClick="onClickStrategies"/>
+        <TextView
+            android:id="@+id/combo_button_label"
+            android:text="@string/combo_button_label"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/combo_button"
+            android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:id="@+id/strategies_button_label"
-        android:text="@string/strategies_button_label"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/strategies_button"
-        android:layout_alignStart="@+id/strategies_button"
-        android:paddingLeft="15dp"/>
+        <!-- Strategies button and label -->
+        <ImageView
+            android:id="@+id/strategies_button"
+            android:src="@drawable/strategies_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/combo_button"
+            android:layout_toStartOf="@+id/combo_button"
+            android:onClick="onClickStrategies"/>
 
-    <!-- Match-up button and label -->
-    <ImageView
-        android:id="@+id/characterStrat_button"
-        android:src="@drawable/character_strat_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/strategies_button"
-        android:layout_toEndOf="@+id/combo_button"
-        android:onClick="onClickCharacterStrat"/>
+        <TextView
+            android:id="@+id/strategies_button_label"
+            android:text="@string/strategies_button_label"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/strategies_button"
+            android:layout_alignStart="@+id/strategies_button"
+            android:paddingLeft="15dp"/>
 
-    <TextView
-        android:id="@+id/characterStrat_button_label"
-        android:text="@string/characterStrat_button_label"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingRight="15dp"
-        android:layout_below="@+id/characterStrat_button"
-        android:layout_alignStart="@+id/characterStrat_button" />
+        <!-- Match-up button and label -->
+        <ImageView
+            android:id="@+id/characterStrat_button"
+            android:src="@drawable/character_strat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/strategies_button"
+            android:layout_toEndOf="@+id/combo_button"
+            android:onClick="onClickCharacterStrat"/>
+
+        <TextView
+            android:id="@+id/characterStrat_button_label"
+            android:text="@string/characterStrat_button_label"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:layout_below="@+id/characterStrat_button"
+            android:layout_alignStart="@+id/characterStrat_button" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
