@@ -6,16 +6,17 @@
     <!-- Introduction string -->
     <string name="intro_string">Welcome to SFV Fight Guide. This is a basic guide
                                 to get you ready for Street Fighter V!</string>
+
     <!-- Button label strings -->
     <string name="combo_button_label">Combos</string>
     <string name="strategies_button_label">Strategies</string>
-    <string name="matchups_button_label">Match-ups</string>
+    <string name="characterStrat_button_label">Character Strats</string>
 
     <!-- ComboCategoryActivity title -->
     <string name="title_activity_combo_category">Characters</string>
     <string name="title_activity_combo_detail">Combos</string>
 
-    <!-- ComboDetailAcitivty strings -->
+    <!-- ComboDetailActivity strings -->
     <!-- Labels -->
     <string name="vTrigger_label">V Trigger</string>
     <string name="specials_label">Specials</string>

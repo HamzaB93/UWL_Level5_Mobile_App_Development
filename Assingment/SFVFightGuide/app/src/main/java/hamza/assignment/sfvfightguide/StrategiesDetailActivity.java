@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class StrategiesDetailActivity extends Activity {
 
-    public static final String EXTRA_STRATEGYNO = "strategyNo";
+    public static final String EXTRA_STRATEGNO = "strategyNo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class StrategiesDetailActivity extends Activity {
         setContentView(R.layout.activity_strategies_detail);
 
         // Getting the strategy from the intent
-        int strategyNo = (Integer) getIntent().getExtras().get(EXTRA_STRATEGYNO);
+        int strategyNo = (Integer) getIntent().getExtras().get(EXTRA_STRATEGNO);
         Strategy strategy = Strategy.strategies[strategyNo];
 
         // Populating the views in the XML

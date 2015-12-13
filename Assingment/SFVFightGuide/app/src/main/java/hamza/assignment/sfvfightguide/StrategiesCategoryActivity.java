@@ -40,7 +40,7 @@ public class StrategiesCategoryActivity extends ListActivity {
         Intent intent = new Intent(StrategiesCategoryActivity.this, StrategiesDetailActivity.class);
 
         // Give the intent an extra, this will be the index of the item that was clicked
-        intent.putExtra(StrategiesDetailActivity.EXTRA_STRATEGYNO, (int) id);
+        intent.putExtra(StrategiesDetailActivity.EXTRA_STRATEGNO, (int) id);
 
         // Start the activity
         startActivity(intent);

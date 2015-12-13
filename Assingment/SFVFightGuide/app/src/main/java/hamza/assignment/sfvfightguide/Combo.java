@@ -28,7 +28,7 @@ public class Combo
                 new Combo("Nash", R.drawable.nash, "Activate: HP + HK\nVSkill: MP + Mk (With a direction)\nVReversal: Fwd + Punch x3\n",
                             "Sonic Boom: Dwn, Fwd + Punch\nSonic Scythe: Dwn, Bk + Kick\nMoonsault Slash: Dwn, Fwd + Kick\n" +
                                     "Tragedy Assault: Fwd, Dwn, Fwd + Kick\n","Judgement Saber: Dwn, Bk, Dwn, Bk + Kick"),
-                new Combo("Bison", R.drawable.bison, "Activate: HP + HK\"VSkill: MP + MK\nVReversal: Fwd + Punch x3\n",
+                new Combo("Bison", R.drawable.bison, "Activate: HP + HK\nVSkill: MP + MK\nVReversal: Fwd + Punch x3\n",
                             "Psycho Blast: Charged Bk, Fwd + Punch\nDouble Knee Press: Charged Bk, Fwd + Kick\n" +
                             "Head Press: Charged Dwn, Up + Kick\nSomersault Skull Driver: Punch after head press hits\n" +
                             "Devil Reverse: Punch Before head press hits\nPsycho Inferno: Charged Dwn, Up + Punch\n",
