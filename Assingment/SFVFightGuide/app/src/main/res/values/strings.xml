@@ -28,6 +28,16 @@
     <!-- StrategiesDetailActivity title -->
     <string name="title_activity_strategies_detail">Strategy</string>
 
+    <!-- CharacterStratCategoryActivity title -->
+    <string name="title_activity_character_strat_category">Characters</string>
+
+    <!-- CharacterStratDetailActivity title-->
+    <string name="title_activity_character_strat_detail">Character Strategy</string>
+
+
+
+
+
 
 
     

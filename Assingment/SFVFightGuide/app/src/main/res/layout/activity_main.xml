@@ -61,11 +61,12 @@
     <!-- Match-up button and label -->
     <ImageView
         android:id="@+id/characterStrat_button"
-        android:src="@drawable/characterStrat_button"
+        android:src="@drawable/character_strat_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/strategies_button"
-        android:layout_toEndOf="@+id/combo_button" />
+        android:layout_toEndOf="@+id/combo_button"
+        android:onClick="onClickCharacterStrat"/>
 
     <TextView
         android:id="@+id/characterStrat_button_label"

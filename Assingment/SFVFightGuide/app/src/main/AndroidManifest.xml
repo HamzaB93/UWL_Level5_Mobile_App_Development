@@ -32,6 +32,14 @@
             android:name=".StrategiesDetailActivity"
             android:label="@string/title_activity_strategies_detail" >
         </activity>
+        <activity
+            android:name=".CharacterStratCategoryActivity"
+            android:label="@string/title_activity_character_strat_category" >
+        </activity>
+        <activity
+            android:name=".CharacterStratDetailActivity"
+            android:label="@string/title_activity_character_strat_detail" >
+        </activity>
     </application>
 
 </manifest>

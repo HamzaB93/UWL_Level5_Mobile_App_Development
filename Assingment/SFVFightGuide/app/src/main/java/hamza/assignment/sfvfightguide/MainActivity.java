@@ -43,4 +43,14 @@ public class MainActivity extends Activity {
         // Start the intent
         startActivity(intent);
     }
+
+    // Making an intent to start CharacterStratCategory
+    public void onClickCharacterStrat(View view)
+    {
+        // Making an intent from this activity to start the next one
+        Intent intent = new Intent(MainActivity.this, CharacterStratCategoryActivity.class);
+
+        // Start the Intent
+        startActivity(intent);
+    }
 }
