@@ -5,14 +5,20 @@ package hamza.assignment.sfvfightguide;
  */
 public class CharacterStrat
 {
-    // Properties
+    // Properties for CharacterStrat objects
+    // Name of the character
     String name;
+    // Image reference
     int imageResource;
+    // The content that will go with the character
     String tip;
 
+    // Defining an array of CharacterStrat objects
     public static final CharacterStrat[] charStrats = {
 
             // Constructing objects that will be in the array
+            // They have a name, image resource from drawbale folder
+            // and the tips
             new CharacterStrat("Ryu", R.drawable.ryu,
                     "Ryu is a high damage character. You will make great use of his punch attacks.\n\n" +
                             "Use Ryu's medium punch for great pokes fairly close range. If you land one of these from" +
@@ -68,6 +74,8 @@ public class CharacterStrat
     }
 
     // Getters
+    // Will be used when the information for an object is referenced
+    // based on clicks in the list view
     public String getName()
     {
         return name;

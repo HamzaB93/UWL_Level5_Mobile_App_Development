@@ -11,15 +11,19 @@ import android.widget.TextView;
 
 public class CharacterStratDetailActivity extends Activity {
 
+    // Acts as a reference to the array index
     public static final String EXTRA_CHARSTRATNO = "charStratNo";
 
+    // When the Activity is created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character_strat_detail);
 
-        // Getting the strategy from the intent
+        // Getting the character strategy from the intent
         int charStratNo = (Integer) getIntent().getExtras().get(EXTRA_CHARSTRATNO);
+
+        // Put the indexed object from the intent
         CharacterStrat charStrats = CharacterStrat.charStrats[charStratNo];
 
         // Populating the views in the XML

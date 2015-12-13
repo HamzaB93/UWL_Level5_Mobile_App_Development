@@ -10,12 +10,15 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+// Extends listActivity which gives a defauly layout
 public class CharacterStratCategoryActivity extends ListActivity {
 
+    // When the page is created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Create an ArrayAdapter for the CharacterStrat objects in the array
         ArrayAdapter<CharacterStrat> listAdapter = new ArrayAdapter<CharacterStrat>(
                 // The current activity
                 this,

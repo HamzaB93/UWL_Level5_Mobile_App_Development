@@ -6,8 +6,11 @@ package hamza.assignment.sfvfightguide;
 public class Combo
 {
     // Properties for each character Combo object
+    // Name of the character
     String name;
+    // The refernce to the image
     int imageResourceId;
+    // Categories
     String vTrigger;
     String specials;
     String criticalArt;
@@ -15,7 +18,8 @@ public class Combo
     // Array that contains the Combo objects referenced as combos
     public static final Combo[] combos =
             {
-                // Making new Combo objects
+                // Making new Combo objects with name, image resource id,
+                // and the other categories
                 new Combo("Ryu",
                         R.drawable.ryu,
                         "Activate: HP + HK\nVSkill: MP + MK\nVReversal: Fwd + Punch x3\n",
@@ -54,6 +58,8 @@ public class Combo
     }
 
     // Getters
+    // Will be used to get the information of the object that will
+    // selected from a list activity
     public String getName()
     {
         return name;
@@ -75,7 +81,7 @@ public class Combo
         return criticalArt;
     }
 
-    // toString for string representation
+    // toString for string representation of the objects
     public String toString()
     {
         return this.name;

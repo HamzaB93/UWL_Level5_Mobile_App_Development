@@ -6,12 +6,15 @@ package hamza.assignment.sfvfightguide;
 public class Strategy
 {
     // Properties
+    // Name of the tip
     String name;
+    // The tip itself
     String tip;
 
     // Array of strategies
     public static final Strategy[] strategies =
             {
+                    // Objects have a name, and tips
                     new Strategy("Blocking","Block! Block! and BLOCK!\n\nTo master the game you need to learn how to block attacks.\n\n" +
                             "It is great being good at attacking, but while dishing out the attacks, your opponent will be beating you mentally" +
                             "by blocking everything you throw at them.\n\nThe best offense in the game is a great defence. If you are able to block" +
@@ -50,6 +53,7 @@ public class Strategy
         this.name = name;
         this.tip = tip;
     }
+
     // Getters to be used to get the information for an object
     public String getName()
     {

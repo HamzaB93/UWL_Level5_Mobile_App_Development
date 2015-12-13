@@ -12,6 +12,7 @@ import org.w3c.dom.Text;
 
 public class ComboDetailActivity extends Activity {
 
+    // Acts as a reference to the item that was clicked in the list activity
     public static final String EXTRA_COMBON = "comboNo";
 
     @Override
@@ -19,7 +20,7 @@ public class ComboDetailActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_combo_detail);
 
-        // GEtting the combo from the intent
+        // Getting the combo from the intent
         int comboNo = (Integer)getIntent().getExtras().get(EXTRA_COMBON);
         Combo combo = Combo.combos[comboNo];
 

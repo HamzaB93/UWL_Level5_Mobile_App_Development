@@ -10,8 +10,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+// Extends ListActivity, will give a default layout
 public class ComboCategoryActivity extends ListActivity {
 
+    // When the activity is created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,3 +1,4 @@
+<!-- Scroll view to allow the user to scroll if screen is full-->
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
@@ -15,17 +16,20 @@
         android:orientation="vertical"
         tools:context="hamza.assignment.sfvfightguide.CharacterStratDetailActivity">
 
+        <!-- Name of the character-->
         <TextView
             android:id="@+id/name"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+        <!-- Image of the character -->
         <ImageView
             android:id="@+id/photo"
             android:layout_width="300dp"
             android:layout_height="250dp" />
 
+        <!-- The tip for the character -->
         <TextView
             android:id="@+id/tip"
             android:layout_width="wrap_content"

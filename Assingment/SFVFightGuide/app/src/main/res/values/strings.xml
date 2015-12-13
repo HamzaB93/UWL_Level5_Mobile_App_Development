@@ -2,7 +2,7 @@
     <string name="app_name">SFV Fight Guide</string>
     <string name="action_settings">Settings</string>
 
-    <!-- Main Activity Strings -->
+    <!-- Main Activity -->
     <!-- Introduction string -->
     <string name="intro_string">Welcome to SFV Fight Guide. This is a basic guide
                                 to get you ready for Street Fighter V!</string>
@@ -12,33 +12,33 @@
     <string name="strategies_button_label">Strategies</string>
     <string name="characterStrat_button_label">Character Strats</string>
 
-    <!-- ComboCategoryActivity title -->
+    <!-- ComboCategoryActivity -->
+    <!-- Title -->
     <string name="title_activity_combo_category">Characters</string>
+
+    <!-- ComboDetailActivity -->
+    <!-- Title -->
     <string name="title_activity_combo_detail">Combos</string>
 
-    <!-- ComboDetailActivity strings -->
     <!-- Labels -->
     <string name="vTrigger_label">V Trigger</string>
     <string name="specials_label">Specials</string>
     <string name="criticalArt_label">Critical Art</string>
 
-    <!-- StrategiesCategoryActivity title -->
+    <!-- StrategiesCategoryActivity -->
+    <!-- Title -->
     <string name="title_activity_strategies_category">Strategies</string>
 
-    <!-- StrategiesDetailActivity title -->
+    <!-- StrategiesDetailActivity-->
+    <!-- Title -->
     <string name="title_activity_strategies_detail">Strategy</string>
 
-    <!-- CharacterStratCategoryActivity title -->
+    <!-- CharacterStratCategoryActivity -->
+    <!-- Title -->
     <string name="title_activity_character_strat_category">Characters</string>
 
-    <!-- CharacterStratDetailActivity title-->
+    <!-- CharacterStratDetailActivity -->
+    <!-- Title -->
     <string name="title_activity_character_strat_detail">Character Strategy</string>
 
-
-
-
-
-
-
-    
 </resources>

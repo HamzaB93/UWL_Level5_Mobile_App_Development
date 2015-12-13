@@ -12,8 +12,10 @@ import android.widget.TextView;
 
 public class StrategiesDetailActivity extends Activity {
 
+    // Reference to the item that was clicked in the list activity
     public static final String EXTRA_STRATEGNO = "strategyNo";
 
+    // When the activity is created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

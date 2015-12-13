@@ -12,6 +12,7 @@ import android.widget.ListView;
 
 import java.lang.reflect.Array;
 
+// Extends ListActivity to give a default list layout
 public class StrategiesCategoryActivity extends ListActivity {
 
     @Override
