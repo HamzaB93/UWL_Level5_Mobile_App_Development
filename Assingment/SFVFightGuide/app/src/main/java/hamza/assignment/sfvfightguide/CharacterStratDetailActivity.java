@@ -26,14 +26,21 @@ public class CharacterStratDetailActivity extends Activity {
         // Put the indexed object from the intent
         CharacterStrat charStrats = CharacterStrat.charStrats[charStratNo];
 
-        // Populating the views in the XML
+        // Populating the TextView
+        // First getting refernce to the TextView by identifying the id
         TextView name = (TextView) findViewById(R.id.name);
+
+        // Then setting the text retrieved from the itent
         name.setText(charStrats.getName());
 
+        // Getting refernce to the image view with the id
         ImageView photo = (ImageView) findViewById(R.id.photo);
+        // Setting the image provided in the intent
         photo.setImageResource(charStrats.getImageResource());
 
+        // Retrieving the reference to the text view with the id
         TextView tip = (TextView) findViewById(R.id.tip);
+        // Setting the text
         tip.setText(charStrats.getTip());
     }
 

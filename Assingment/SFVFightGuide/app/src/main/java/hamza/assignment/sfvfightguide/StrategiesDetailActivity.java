@@ -25,11 +25,14 @@ public class StrategiesDetailActivity extends Activity {
         int strategyNo = (Integer) getIntent().getExtras().get(EXTRA_STRATEGNO);
         Strategy strategy = Strategy.strategies[strategyNo];
 
-        // Populating the views in the XML
+        // Get the reference to the TextView to populate
         TextView name = (TextView) findViewById(R.id.name);
+        // Setting the text
         name.setText(strategy.getName());
 
+        // Getting the next refernce to the textview to populate by id
         TextView tip = (TextView) findViewById(R.id.tip);
+        // Setting the text
         tip.setText(strategy.getTip());
     }
 

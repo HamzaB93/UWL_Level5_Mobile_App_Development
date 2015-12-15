@@ -24,25 +24,29 @@ public class ComboDetailActivity extends Activity {
         int comboNo = (Integer)getIntent().getExtras().get(EXTRA_COMBON);
         Combo combo = Combo.combos[comboNo];
 
-        // Populate the ImageView
+        // Referencing the ImageView
         ImageView photo = (ImageView) findViewById(R.id.photo);
-        // Set the source of the image
+        // Setting the image from the intent
         photo.setImageResource(combo.getImageResourceId());
 
-        // Populate the name TextView
+        // Referencing the TextView by id
         TextView name = (TextView) findViewById(R.id.name);
+        // Setting the text
         name.setText(combo.getName());
 
-        // Populate the vTrigger TextView
+        // Referencing the next TextView by id
         TextView vTrigger = (TextView) findViewById(R.id.vTrigger);
+        // Set the the text to the view provided by the intent
         vTrigger.setText(combo.getvTrigger());
 
-        // Populate the specials TextView
+        // Referencing the TextView to populate by id
         TextView specials = (TextView) findViewById(R.id.specials);
+        // Setting the text
         specials.setText(combo.getSpecials());
 
-        // Populate the criticalArt TextView
+        // Referencing the final TextView by id
         TextView criticalArt = (TextView) findViewById(R.id.criticalArt);
+        // Setting the text
         criticalArt.setText(combo.getCriticalArt());
     }
 
