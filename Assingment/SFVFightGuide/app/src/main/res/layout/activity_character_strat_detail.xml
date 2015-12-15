@@ -17,6 +17,7 @@
         tools:context="hamza.assignment.sfvfightguide.CharacterStratDetailActivity">
 
         <!-- Name of the character-->
+        <!-- Giving an id to reference in the java file -->
         <TextView
             android:id="@+id/name"
             android:textStyle="bold"
@@ -24,12 +25,14 @@
             android:layout_height="wrap_content" />
 
         <!-- Image of the character -->
+        <!-- Giving an id to reference in the java file -->
         <ImageView
             android:id="@+id/photo"
             android:layout_width="300dp"
             android:layout_height="250dp" />
 
         <!-- The tip for the character -->
+        <!-- Giving an id to reference in the java file -->
         <TextView
             android:id="@+id/tip"
             android:layout_width="wrap_content"
